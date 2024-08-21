@@ -4,7 +4,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 
-import Contactexpanded from "./Contactexpanded";
+import Contactexpanded from "./ContactExpanded";
 
 const Contact = () => {
   const [isclick, setIsclick] = useState(false);
