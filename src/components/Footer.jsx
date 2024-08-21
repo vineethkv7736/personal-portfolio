@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 const Footer = () => {
     return (
         <section id="#footer" className=" h-32 bg-black">
-            <div className="p-5 border-t-2 border-blue-300 flex flex-col gap-3 md:gap-5">
+            <div className="p-5 border-t-2 border-vvoielt flex flex-col gap-3 md:gap-5">
                 <div className="text-white text-xl md:text-3xl">
                     <h1>Connect With Me</h1>
                 </div>
