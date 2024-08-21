@@ -26,11 +26,17 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        vblue:"var( --vblue)",
+        vvoielt:"var( --vvoielt)",
+        vdblue:"var( --vdblue)",
+        vrose:"var( --vrose)",
+        vgray:"var( --vgray)",
+        vwhite:"var( --vwhite)",
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
