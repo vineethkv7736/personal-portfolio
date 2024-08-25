@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Input } from "./ui/input";
-import {PhoneInput} from "./ui/phone-input"
+import {PhoneInput} from "./ui/Phone-input"
 import { Button } from "./ui/button";
 
 const Contactexpanded = () => {
