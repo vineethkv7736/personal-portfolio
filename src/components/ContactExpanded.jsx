@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Input } from "./ui/input";
-import PhoneInput from "react-phone-input-2";
-import "react-phone-input-2/lib/style.css";
+import {PhoneInput} from "./ui/phone-input"
+import { Button } from "./ui/button";
 
 const Contactexpanded = () => {
   const [value, setValue] = useState();
@@ -79,31 +79,38 @@ const Contactexpanded = () => {
         ></iframe>
       </div>
       <div className="w-full md:w-3/6 h-max my-5 md:my-0 px-2 md:px-32">
-        <div className="gap-5 w-full h-full rounded-2xl border border-vvoielt flex flex-col justify-center items-center">
+        <div className=" gap-5 px-10 w-full h-full rounded-2xl border border-vvoielt flex flex-col justify-center items-center">
           <h1 className="text-vvoielt font-bold text-xl mt-5">Reach Me</h1>
-          <div className="text-vwhite flex flex-col justify-start">
+          <div className="text-vwhite flex flex-col justify-start w-full">
             <h1>Fullname</h1>
             <Input
               type="text"
               placeholder="Enter your name"
-              className="rounded-2xl md:w-80"
+              className="rounded-xl "
             />
           </div>
-          <div className="text-vwhite flex flex-col justify-start">
+          <div className="text-vwhite w-full flex flex-col justify-start">
             <h1>Phone Number</h1>
             {/* <div  className="border rounded-2xl md:w-80 text-black bg-white ">
             
             </div> */}
-            <PhoneInput country={"in"}  className=" md:w-80 text-black" />
+          <PhoneInput defaultCountry="IN"  />
           </div>
-          <div className="text-vwhite flex flex-col justify-start mb-10">
+          <div className="text-vwhite w-full flex flex-col justify-start ">
             <h1>Email</h1>
             <Input
               type="email"
               placeholder="Example@gmail.com"
-              className="rounded-2xl md:w-80"
+              className="rounded-xl "
             />
           </div>
+          <Button
+                variant="outline"
+                className="mb-2 rounded-xl border-none bg-white text-black"
+                // onClick={}
+              >
+                Submit
+              </Button>
         </div>
       </div>
     </div>
